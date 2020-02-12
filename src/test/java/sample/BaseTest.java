@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 import com.qa.hubspot.base.BasePage;
 import com.qa.hubspot.page.LoginPage;
@@ -19,10 +20,16 @@ public class BaseTest {
 	Credentials userCred;
 
 	@BeforeMethod
-	public void setUp() throws InterruptedException {
+	@Parameters(value={"browser"})
+	public void setUp(String browser) throws InterruptedException {
+		String browserName = null;
 		basePage = new BasePage();
 		prop = basePage.init_properties();
-		String browserName = prop.getProperty("browser");
+		if (browser.equals(null)) {
+			browserName = prop.getProperty("browser");
+		} else {
+			browserName = browser;
+		}
 		driver = basePage.init_driver(browserName);
 		driver.get(prop.getProperty("url"));
 		loginPage = new LoginPage(driver);

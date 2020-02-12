@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Hub Spot Regression Suite]">
   <listeners>
-    <listener class-name="com.qa.hubspot.listeners.TestAllureListener"/>
+    <listener class-name="com.qa.hubspot.listeners.TesultsListener"/>
   </listeners>
   <test name="Hub Spot Functional Regression Test(failed)">
     <classes>

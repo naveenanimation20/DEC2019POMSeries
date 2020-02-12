@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  Hub Spot Functional Regression Test2</title>
+<title>TestNG:  Hub Spot Functional Regression Test- FF</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Hub Spot Functional Regression Test2</h2><table border='1' align="center">
+<h2 align='center'>Hub Spot Functional Regression Test- FF</h2><table border='1' align="center">
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Feb 12 11:54:16 IST 2020</td>
+<td>Started on:</td><td>Wed Feb 12 12:15:59 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>74 seconds (74833 ms)</td>
+<tr><td>Total time:</td><td>87 seconds (87417 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -86,14 +86,13 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Sign up11111&quot;}
-  (Session info: chrome=80.0.3987.100)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: Sign up11111
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;Naveen-Mac.local&apos;, ip: &apos;fe80:0:0:0:ca1:c605:f384:534c%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.100, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: /var/folders/fd/lw5s91x96f9...}, goog:chromeOptions: {debuggerAddress: localhost:60581}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f2db93b3e03a70b3461a4f549e16974f
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 70.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191030021342, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 12943, moz:profile: /var/folders/fd/lw5s91x96f9..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.6.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 534cb2f7-d25c-a846-8810-b0e9f6ec314d
 *** Element info: {Using=link text, value=Sign up11111}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -109,8 +108,8 @@ Session ID: f2db93b3e03a70b3461a4f549e16974f
 	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
 	... 23 more
-... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace871787204", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace871787204'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.linkText: Sign up11111 (tried for 20 second(s) with 500 milliseconds interval)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1345906690", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1345906690'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.linkText: Sign up11111 (tried for 20 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 	at com.qa.hubspot.util.ElementUtil.waitForElementPresent(ElementUtil.java:34)
@@ -136,16 +135,15 @@ Session ID: f2db93b3e03a70b3461a4f549e16974f
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Sign up11111&quot;}
-  (Session info: chrome=80.0.3987.100)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: Sign up11111
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;Naveen-Mac.local&apos;, ip: &apos;fe80:0:0:0:ca1:c605:f384:534c%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.100, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: /var/folders/fd/lw5s91x96f9...}, goog:chromeOptions: {debuggerAddress: localhost:60581}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f2db93b3e03a70b3461a4f549e16974f
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 70.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191030021342, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 12943, moz:profile: /var/folders/fd/lw5s91x96f9..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.6.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 534cb2f7-d25c-a846-8810-b0e9f6ec314d
 *** Element info: {Using=link text, value=Sign up11111}
-	at sun.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+	at sun.reflect.GeneratedConstructorAccessor26.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
@@ -164,7 +162,7 @@ Session ID: f2db93b3e03a70b3461a4f549e16974f
 	... 23 more
 </pre></div></td>
 <td>25</td>
-<td>sample.LoginPageTest@5ab9b447</td></tr>
+<td>sample.LoginPageTest@3b9d6699</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -176,13 +174,13 @@ Session ID: f2db93b3e03a70b3461a4f549e16974f
 <tr>
 <td title='sample.LoginPageTest.loginTest()'><b>loginTest</b><br>Test class: sample.LoginPageTest</td>
 <td></td>
-<td>14</td>
-<td>sample.LoginPageTest@5ab9b447</td></tr>
+<td>16</td>
+<td>sample.LoginPageTest@3b9d6699</td></tr>
 <tr>
 <td title='sample.LoginPageTest.verifyLoginPageTitleTest()'><b>verifyLoginPageTitleTest</b><br>Test class: sample.LoginPageTest</td>
 <td></td>
-<td>24</td>
-<td>sample.LoginPageTest@5ab9b447</td></tr>
+<td>22</td>
+<td>sample.LoginPageTest@3b9d6699</td></tr>
 </table><p>
 </body>
 </html>

@@ -16,7 +16,7 @@ import org.testng.ITestResult;
 import com.qa.hubspot.base.BasePage;
 import com.tesults.tesults.Results;
 
-public class TesultsListener implements ITestListener {
+public class TesultsListener extends BasePage implements ITestListener {
 
 	List<Map<String, Object>> testCases = new ArrayList<Map<String, Object>>();
 
@@ -55,9 +55,9 @@ public class TesultsListener implements ITestListener {
 		testCase.put("suite", "TesultsExample");
 		testCase.put("result", "fail");
 		testCase.put("params", getTestParams(iTestResult));
-//		List<String> files = new ArrayList<String>();
-//		files.add(getScreenshot());
-//		testCase.put("files", files);
+		List<String> files = new ArrayList<String>();
+		files.add(getScreenshot());
+		testCase.put("files", files);
 
 		testCases.add(testCase);
 	}
@@ -69,9 +69,9 @@ public class TesultsListener implements ITestListener {
 		testCase.put("suite", "TesultsExample");
 		testCase.put("result", "fail");
 		testCase.put("params", getTestParams(iTestResult));
-//		List<String> files = new ArrayList<String>();
-//		files.add(getScreenshot());
-//		testCase.put("files", files);
+		List<String> files = new ArrayList<String>();
+		files.add(getScreenshot());
+		testCase.put("files", files);
 
 		testCases.add(testCase);
 	}
