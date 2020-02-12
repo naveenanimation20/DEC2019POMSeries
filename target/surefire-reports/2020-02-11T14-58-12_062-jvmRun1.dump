@@ -1,0 +1,9 @@
+# Created on 2020-02-11T14:58:13.251
+org.apache.maven.surefire.testset.TestSetFailedException: Suite file /Users/NaveenKhunteta/Documents/workspace/Dec2019POMSeries/src/test/resources/testrunner/testng-suite.xml is not a valid file
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.locateTestSets(TestNGXmlTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Hub Spot Regression Suite">
+	<listeners>
+		<listener class-name="com.qa.hubspot.listeners.ExtentReportListener" />
+	</listeners>
+	
+	<test name="Hub Spot Functional Regression Test1">
+		<classes>
+			<class name="sample.LoginPageTest" />
+			<class name="sample.HomePageTest" />
+
+		</classes>
+	</test>
+
+
+</suite> 

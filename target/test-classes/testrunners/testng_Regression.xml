@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Hub Spot Regression Suite">
+
+	<listeners>
+<!-- 		<listener class-name="com.qa.hubspot.listeners.ExtentReportListener" 
+			/> <listener class-name="com.qa.hubspot.listeners.pdfListener" />
+ -->
+		<listener class-name="com.qa.hubspot.listeners.TestAllureListener" />
+		<!-- <listener class-name="com.qa.hubspot.listeners.TesultsListener" /> -->
+
+	</listeners>
+
+	<test name="Hub Spot Functional Regression Test">
+
+<!-- 		<groups>
+			<run>
+				<include name="sanity" />
+			</run>
+		</groups> -->
+
+
+		<classes>
+
+			<class name="com.qa.hubspot.tests.LoginPageTest" />
+<!-- 			<class name="com.qa.hubspot.tests.HomePageTest" />
+ -->			<!-- <class name="com.qa.hubspot.tests.ContactsPageTest" /> -->
+
+
+		</classes>
+	</test>
+</suite> 
