@@ -9,8 +9,8 @@
 
 	<test name="Hub Spot Functional Regression Test - FF"
 		thread-count="3" parallel="classes">
-<!-- 		<parameter name="browser" value="firefox" />
- -->
+		<parameter name="browser" value="firefox" />
+
 		<classes>
 			<class name="com.qa.hubspot.tests.LoginPageTest" />
 			<class name="com.qa.hubspot.tests.HomePageTest" />
@@ -18,7 +18,7 @@
 		</classes>
 	</test>
 
-	<!-- <test name="Hub Spot Functional Regression Test - chrome"
+	<test name="Hub Spot Functional Regression Test - chrome"
 		thread-count="3" parallel="classes">
 		<parameter name="browser" value="chrome" />
 
@@ -26,7 +26,7 @@
 			<class name="com.qa.hubspot.tests.LoginPageTest" />
 			<class name="com.qa.hubspot.tests.HomePageTest" />
 		</classes>
-	</test> -->
+	</test>
 
 
 

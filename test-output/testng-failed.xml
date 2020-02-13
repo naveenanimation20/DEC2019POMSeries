@@ -4,22 +4,34 @@
   <listeners>
     <listener class-name="com.qa.hubspot.listeners.ExtentReportListener"/>
   </listeners>
-  <test name="Hub Spot Functional Regression Test - FF(failed)" parallel="classes">
+  <test name="Hub Spot Functional Regression Test - FF(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
     <classes>
       <class name="com.qa.hubspot.tests.LoginPageTest">
         <methods>
           <include name="setUp"/>
+          <include name="setUp"/>
           <include name="verifySignUpLinkTest"/>
           <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
         </methods>
       </class> <!-- com.qa.hubspot.tests.LoginPageTest -->
-      <class name="com.qa.hubspot.tests.HomePageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="verifyHomePageHeaderTest"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.qa.hubspot.tests.HomePageTest -->
     </classes>
   </test> <!-- Hub Spot Functional Regression Test - FF(failed) -->
+  <test name="Hub Spot Functional Regression Test - chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.hubspot.tests.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="verifySignUpLinkTest"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- com.qa.hubspot.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- Hub Spot Functional Regression Test - chrome(failed) -->
 </suite> <!-- Failed suite [Hub Spot Regression Suite] -->
