@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Hub Spot Regression Suite" thread-count="2" parallel="tests">
+
+	<listeners>
+		<listener class-name="com.qa.hubspot.listeners.ExtentReportListener" />
+	</listeners>
+
+	<test name="Hub Spot Functional Regression Test - FF"
+		thread-count="3" parallel="classes">
+		<parameter name="browser" value="firefox" />
+
+		<classes>
+			<class name="com.qa.hubspot.tests.LoginPageTest" />
+			<class name="com.qa.hubspot.tests.HomePageTest" />
+
+		</classes>
+	</test>
+
+	<test name="Hub Spot Functional Regression Test - chrome"
+		thread-count="3" parallel="classes">
+		<parameter name="browser" value="chrome" />
+
+		<classes>
+			<class name="com.qa.hubspot.tests.LoginPageTest" />
+			<class name="com.qa.hubspot.tests.HomePageTest" />
+		</classes>
+	</test>
+
+
+
+
+</suite> 

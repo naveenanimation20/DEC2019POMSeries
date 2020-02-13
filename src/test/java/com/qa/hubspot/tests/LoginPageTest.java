@@ -7,6 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.qa.hubspot.base.BasePage;
@@ -32,10 +33,20 @@ public class LoginPageTest {
 	Credentials userCred;
 
 	@BeforeMethod(alwaysRun=true)
-	public void setUp() {
+	@Parameters(value={"browser"})
+	public void setUp(String browser) {
+		String browserName = null;
 		basePage = new BasePage();
 		prop = basePage.init_properties();
-		String browserName = prop.getProperty("browser");
+				
+		
+		if(browser.equals(null)){
+			 browserName = prop.getProperty("browser");
+		}else{
+			browserName = browser;
+		}
+		
+		
 		driver = basePage.init_driver(browserName);
 		driver.get(prop.getProperty("url"));
 		loginPage = new LoginPage(driver);
