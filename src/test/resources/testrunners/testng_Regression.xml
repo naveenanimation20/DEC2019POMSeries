@@ -3,30 +3,17 @@
 
 <suite name="Hub Spot Regression Suite">
 
-	<listeners>
-<!-- 		<listener class-name="com.qa.hubspot.listeners.ExtentReportListener" 
-			/> <listener class-name="com.qa.hubspot.listeners.pdfListener" />
- -->
-<!-- 		<listener class-name="com.qa.hubspot.listeners.TestAllureListener" />
- -->		<listener class-name="com.qa.hubspot.listeners.TesultsListener" />
+	<!-- <listeners>
 
-	</listeners>
+		<listener class-name="com.qa.hubspot.listeners.TesultsListener" />
+
+	</listeners> -->
 
 	<test name="Hub Spot Functional Regression Test">
-
-<!-- 		<groups>
-			<run>
-				<include name="sanity" />
-			</run>
-		</groups> -->
-
-
+		<parameter name="browser" value="firefox" />
 		<classes>
 
 			<class name="com.qa.hubspot.tests.LoginPageTest" />
-<!-- 			<class name="com.qa.hubspot.tests.HomePageTest" />
- -->			<!-- <class name="com.qa.hubspot.tests.ContactsPageTest" /> -->
-
 
 		</classes>
 	</test>
