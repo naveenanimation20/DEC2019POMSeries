@@ -1,13 +1,11 @@
-node {
-	stage ('SCM checkout'){
-		git "https://github.com/naveenanimation20/DEC2019POMSeries"
-		}
-	stage ('Build'){
-    	dir("/") {
-	   sh "mvn clean install"
-       }
-       	dir("target") {
-	   sh "java -jar Dec2019POMSeries-0.0.1-SNAPSHOT.jar"
-       }
-		}
+#!groovy
+
+node('master') {
+    stage('Checkout') {
+        echo 'Code checkout'
+    }
+    
+    stage('Run tests') {
+        echo 'Running tests'
+    }
 }
