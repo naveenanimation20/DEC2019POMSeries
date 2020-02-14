@@ -4,8 +4,8 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -32,7 +32,7 @@ public class LoginPageTest {
 	LoginPage loginPage;
 	Credentials userCred;
 
-	@BeforeMethod(alwaysRun=true)
+	@BeforeTest(alwaysRun=true)
 	@Parameters(value={"browser"})
 	public void setUp(String browser) {
 		String browserName = null;
@@ -62,14 +62,14 @@ public class LoginPageTest {
 		Assert.assertEquals(title, AppConstants.LOGIN_PAGE_TITLE);
 	}
 
-	@Test(priority = 2, groups = "sanity")
+	@Test(priority = 2, groups = "sanity", enabled=false)
 	@Description("verify Sign up link Test....")
 	@Severity(SeverityLevel.CRITICAL)
 	public void verifySignUpLinkTest() {
 		Assert.assertTrue(loginPage.checkSignUpLink());
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3, enabled=false)
 	@Description("verify Login Test....")
 	@Severity(SeverityLevel.BLOCKER)
 	public void loginTest() {
@@ -102,7 +102,7 @@ public class LoginPageTest {
 	}
 	
 
-	@AfterMethod(alwaysRun=true)
+	@AfterTest(alwaysRun=true)
 	public void tearDown() {
 		driver.quit();
 	}
