@@ -2,10 +2,14 @@
 
 node('master') {
     stage('Checkout') {
-        echo 'Code checkout'
+        checkout scm
     }
     
     stage('Run tests') {
-        echo 'mvn clean install'
+      withMaven(maven: 'Maven 3') {
+          dir('DEC2019POMSeries') {
+            sh 'mvn clean test'
+          }
+      }
     }
 }
