@@ -6,7 +6,7 @@ node('master') {
     }
     
     stage('Run tests') {
-      withMaven(maven: 'Maven_3.5.2') {
+      withMaven(maven: 'Maven_3.6.3') {
           dir('DEC2019POMSeries') {
             sh 'mvn clean test'
           }
