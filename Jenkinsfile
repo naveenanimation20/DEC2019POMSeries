@@ -1,6 +1,10 @@
-#!groovy
+pipeline {
 
-node('master') {
+    agent any
+    tools {
+        maven 'Maven_3.6.3' 
+    }
+    
     stage('Checkout') {
         checkout scm
     }
@@ -12,4 +16,5 @@ node('master') {
           }
       }
     }
+
 }
