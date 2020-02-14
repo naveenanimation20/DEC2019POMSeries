@@ -9,7 +9,7 @@ pipeline {
         sh 'mvn clean test'
       }
     }
-  }
+  
   
 stage('reports') {
     steps {
@@ -23,4 +23,8 @@ stage('reports') {
             ])
     }
     }
-}}
+}
+
+}
+
+}
