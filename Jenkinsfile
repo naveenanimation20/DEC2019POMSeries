@@ -6,6 +6,6 @@ node('master') {
     }
     
     stage('Run tests') {
-        echo 'Running tests'
+        echo 'mvn clean install'
     }
 }
