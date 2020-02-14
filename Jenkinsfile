@@ -5,6 +5,8 @@ pipeline {
         maven 'Maven_3.6.3' 
     }
     
+    stages {
+    
     stage('Checkout') {
         checkout scm
     }
@@ -15,6 +17,8 @@ pipeline {
             sh 'mvn clean test'
           }
       }
+    }
+    
     }
 
 }
