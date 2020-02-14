@@ -21,6 +21,16 @@ stage('reports') {
                     reportBuildPolicy: 'ALWAYS',
                     results: [[path: '/allure-results']]
             ])
+            
+            // publish html
+        		publishHTML target: [
+            allowMissing: false,
+            alwaysLinkToLastBuild: false,
+            keepAll: true,
+            reportDir: '/build',
+            reportFiles: 'TestExecutionReport.html',
+            reportName: 'Extent HTML Report'
+          ]
     }
     }
 }
