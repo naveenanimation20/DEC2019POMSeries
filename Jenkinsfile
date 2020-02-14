@@ -3,7 +3,7 @@ node {
 		git "https://github.com/naveenanimation20/DEC2019POMSeries"
 		}
 	stage ('Build'){
-    	dir("comtest") {
+    	dir("Dec2019POMSeries") {
 	   sh "mvn clean install"
        }
        	dir("Dec2019POMSeries/target") {
