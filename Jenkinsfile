@@ -1,19 +1,15 @@
-pipeline {
-    agent any
-    tools {
-        maven 'apache-maven-3.0.1' 
-    }
-    stages {
-    
+#!groovy
+
+node('master') {
     stage('Checkout') {
         checkout scm
     }
     
-        stage('Run tests') {
-          dir('DEC2019POMSeries') {
+    stage('Run tests') {
+      withMaven(maven: 'Maven 3') {
+          dir('Dec2019POMSeries') {
             sh 'mvn clean test'
           }
-      
-    }
+      }
     }
 }
