@@ -1,23 +1,19 @@
 pipeline {
-
     agent any
     tools {
-        maven 'Maven_3.6.3' 
+        maven 'apache-maven-3.0.1' 
     }
-    
     stages {
     
     stage('Checkout') {
         checkout scm
     }
     
-    stage('Run tests') {
+        stage('Run tests') {
           dir('DEC2019POMSeries') {
             sh 'mvn clean test'
           }
       
     }
-    
     }
-
 }
