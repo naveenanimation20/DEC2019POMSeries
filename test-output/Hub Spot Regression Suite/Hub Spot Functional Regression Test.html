@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Hub Spot Functional Regression Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Feb 12 13:14:03 IST 2020</td>
+<td>Started on:</td><td>Sat Feb 15 10:38:37 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>69 seconds (69443 ms)</td>
+<tr><td>Total time:</td><td>53 seconds (53532 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,43 +75,37 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.qa.hubspot.tests.LoginPageTest.verifySignUpLinkTest()'><b>verifySignUpLinkTest</b><br>Test class: com.qa.hubspot.tests.LoginPageTest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.linkText: Sign up11111 (tried for 20 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.qa.hubspot.util.ElementUtil.waitForElementPresent(ElementUtil.java:34)
-	at com.qa.hubspot.page.LoginPage.checkSignUpLink(LoginPage.java:42)
-	at com.qa.hubspot.tests.LoginPageTest.verifySignUpLinkTest(LoginPageTest.java:58)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Sign up11111&quot;}
-  (Session info: chrome=80.0.3987.100)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+<td title='com.qa.hubspot.tests.LoginPageTest.verifyLoginPageTitleTest()'><b>verifyLoginPageTitleTest</b><br>Test class: com.qa.hubspot.tests.LoginPageTest<br>Test method: verify login page title test.....!!!<br/>
+<a href="#Output-500096147" onClick='toggleBox("Output-500096147", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-500096147" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-500096147">
+<a href='/Users/NaveenKhunteta/Documents/workspace/Dec2019POMSeries/target/surefire-reports/failure_screenshots/verifyLoginPageTitleTest_15_02_2020_10_39_28.png'> <img src='/Users/NaveenKhunteta/Documents/workspace/Dec2019POMSeries/target/surefire-reports/failure_screenshots/verifyLoginPageTitleTest_15_02_2020_10_39_28.png' height='100' width='100'/> </a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be &quot;HubSpot Login11&quot;. Current title: &quot;HubSpot Login&quot; (tried for 20 second(s) with 500 milliseconds interval)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;Naveen-Mac.local&apos;, ip: &apos;fe80:0:0:0:ca1:c605:f384:534c%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.100, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: /var/folders/fd/lw5s91x96f9...}, goog:chromeOptions: {debuggerAddress: localhost:62734}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: b672c611649ded89e98b7bcd32e026e9
-*** Element info: {Using=link text, value=Sign up11111}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 28 more
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace64614565", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace64614565'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.linkText: Sign up11111 (tried for 20 second(s) with 500 milliseconds interval)
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 70.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191030021342, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 8904, moz:profile: /var/folders/fd/lw5s91x96f9..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.6.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cdcb9c56-fc33-7b4c-8db9-a813eef44268
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.qa.hubspot.util.ElementUtil.waitForElementPresent(ElementUtil.java:34)
-	at com.qa.hubspot.page.LoginPage.checkSignUpLink(LoginPage.java:42)
-	at com.qa.hubspot.tests.LoginPageTest.verifySignUpLinkTest(LoginPageTest.java:58)
+	at com.qa.hubspot.util.ElementUtil.waitForTitlePresent(ElementUtil.java:29)
+	at com.qa.hubspot.page.LoginPage.getPageTitle(LoginPage.java:33)
+	at com.qa.hubspot.tests.LoginPageTest.verifyLoginPageTitleTest(LoginPageTest.java:60)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace500096147", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace500096147'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be &quot;HubSpot Login11&quot;. Current title: &quot;HubSpot Login&quot; (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Naveen-Mac.local&apos;, ip: &apos;fe80:0:0:0:ca1:c605:f384:534c%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 70.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191030021342, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 8904, moz:profile: /var/folders/fd/lw5s91x96f9..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.6.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cdcb9c56-fc33-7b4c-8db9-a813eef44268
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.hubspot.util.ElementUtil.waitForTitlePresent(ElementUtil.java:29)
+	at com.qa.hubspot.page.LoginPage.getPageTitle(LoginPage.java:33)
+	at com.qa.hubspot.tests.LoginPageTest.verifyLoginPageTitleTest(LoginPageTest.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -137,53 +131,9 @@ Session ID: b672c611649ded89e98b7bcd32e026e9
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Sign up11111&quot;}
-  (Session info: chrome=80.0.3987.100)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Naveen-Mac.local&apos;, ip: &apos;fe80:0:0:0:ca1:c605:f384:534c%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.100, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: /var/folders/fd/lw5s91x96f9...}, goog:chromeOptions: {debuggerAddress: localhost:62734}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: b672c611649ded89e98b7bcd32e026e9
-*** Element info: {Using=link text, value=Sign up11111}
-	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 28 more
 </pre></div></td>
 <td>25</td>
-<td>com.qa.hubspot.tests.LoginPageTest@184497d1</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.qa.hubspot.tests.LoginPageTest.loginTest()'><b>loginTest</b><br>Test class: com.qa.hubspot.tests.LoginPageTest</td>
-<td></td>
-<td>13</td>
-<td>com.qa.hubspot.tests.LoginPageTest@184497d1</td></tr>
-<tr>
-<td title='com.qa.hubspot.tests.LoginPageTest.verifyLoginPageTitleTest()'><b>verifyLoginPageTitleTest</b><br>Test class: com.qa.hubspot.tests.LoginPageTest<br>Test method: verify login page title test.....!!!</td>
-<td></td>
-<td>5</td>
-<td>com.qa.hubspot.tests.LoginPageTest@184497d1</td></tr>
+<td>com.qa.hubspot.tests.LoginPageTest@5e8f9e2d</td></tr>
 </table><p>
 </body>
 </html>

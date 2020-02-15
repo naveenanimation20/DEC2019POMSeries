@@ -5,8 +5,7 @@
     <classes>
       <class name="com.qa.hubspot.tests.LoginPageTest">
         <methods>
-          <include name="setUp"/>
-          <include name="verifySignUpLinkTest"/>
+          <include name="verifyLoginPageTitleTest"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.qa.hubspot.tests.LoginPageTest -->

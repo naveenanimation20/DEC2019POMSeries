@@ -32,6 +32,7 @@ stage('reports') {
         		reportName: 'Extent HTML Report',
         		 reportTitles: ''
         		 ])
+        		 
     }
     }
 }

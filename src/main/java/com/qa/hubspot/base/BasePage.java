@@ -108,6 +108,7 @@ public class BasePage {
 		} catch (IOException e) {
 			System.out.println("screenshot captured failed...");
 		}
+
 		return path;
 
 	}
